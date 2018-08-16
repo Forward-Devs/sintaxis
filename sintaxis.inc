@@ -62,11 +62,11 @@ public CerrarSintaxis(playerid)
     return 1;
 }
 
-stock Sintaxis(playerid, const texto[], tiempo*1000)
+stock Sintaxis(playerid, const texto[], tiempo = 1)
 {
     new nuevo[120];
     format(nuevo, sizeof(nuevo), "~w~Sintaxis ~y~- ~r~ %s",texto);
-    MostrarInfoJugador(playerid, nuevo, tiempo);
+    MostrarInfoJugador(playerid, nuevo, tiempo*1000);
     return 1;
 }
 
