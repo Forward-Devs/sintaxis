@@ -21,7 +21,7 @@ Ejecuta el siguiente comando:
 
 ## Ejemplo
 
-	```zcmd(check, playerid, params[])
+	zcmd(check, playerid, params[])
     {
         if(Info[playerid][pAdmin] < 1) return Permisos(playerid, "Admin 1 o mayor");
         if(!sscanf(params, "d", params[0]))
@@ -31,4 +31,4 @@ Ejecuta el siguiente comando:
         }
         else Sintaxis(playerid, "/Check <ID>", 5); // Mostrará la sintáxis por 5 segundos.
         return 1;
-    }```
+    }
